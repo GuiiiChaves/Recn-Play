@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capilar</title>
+    <link rel="stylesheet" href="capilar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Início</a> </li>
+                <li> <a href="sobre.html">Sobre</a> </li>
+                <li> <a href="dev.html">Contatos</a> 
+                
+                    <div class="sub-menu-contatos">
+                        <ul>
+                            <li> <a href="estetic.html">Turma de Estética</a> </li>
+                            <li> <a href="dev.html">Desenvolvedores</a> </li>
+                        </ul>
+                    </div>
+                
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="subtitulo">Capilar</h2>
+        
+       <a href="opcoes.html"><img class="imagem" src="img/Manequim.png" alt=""></a>
+        <div class="tipos">
+
+            <p class="alopecia item">Alopecia</p>
+            <p class="caspa item">Caspa</p>
+            <p class="crescimento item">Alterações no Crescimento</p>
+            <p class="quebra item">Quebra</p>
+            <p class="oleosidade item">Oleosidade</p>
+
+        </div>
+    </main>
+
+<!--Modal-->
+    <div id="modal-promocao" class="modal-container">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <h3 class="titulo-modal"></h3>
+            <p class="texto-modal"></p>
+
+        </div>
+    </div>
+
+    <script>
+        const itens = document.querySelectorAll(".item");
+        const modal = document.querySelector("#modal-promocao");
+        const divfoliculite = modal.firstElementChild;
+        divfoliculite.firstElementChild.addEventListener("click", () => {
+            modal.classList.toggle("mostrar");
+        });
+        
+
+        
+
+        itens.forEach((item) => {
+            item.addEventListener("click", () => {
+                if(item.classList.contains("alopecia")){
+                    document.querySelector('.titulo-modal').innerText = 'Alopecia';
+                    document.querySelector('.texto-modal').innerText = 'Evitar uso de chapeus, Evitar consumo de cigarro e bebida alcoólica, Manter os fios sempre limpos, Manter uma alimentação equilibrada, Procurar um profissional qualificado.';
+                } else if(item.classList.contains("caspa")){
+                    document.querySelector('.titulo-modal').innerText = 'Caspa';
+                    document.querySelector('.texto-modal').innerText = 'Não toma banhos quentes, Remover uso de cosméticos do couro cabeludo, Controlar o extresse no dia a dia, Lavar o couro cabeludo dia sim dia não, Procurar um profissional da estética capilar.';
+                } else if(item.classList.contains("crescimento")){
+                    document.querySelector('.titulo-modal').innerText = 'Crescimento';
+                    document.querySelector('.texto-modal').innerText = 'Ter hábitos alimentares saudáveis, Manter sempre o cabelo limpo, Usar cosméticos apropriados ao crescimento capilar, Não usar fontes de calor excessivas, Tomar vitaminas que ajudem o crescimento capilar.';
+                } else if(item.classList.contains("quebra")){
+                    document.querySelector('.titulo-modal').innerText = 'Quebra';
+                    document.querySelector('.texto-modal').innerText = 'Evitar químicas excessivas, Usar o cabelo preso com frequência ocasiona a quebra, Evitar raios solares, sal ou cloro, Não esfregar na hora de secar, Deixar escovas e pentes sempre limpos.';
+                } else if(item.classList.contains("oleosidade")){
+                    document.querySelector('.titulo-modal').innerText = 'Oleosidade';
+                    document.querySelector('.texto-modal').innerText = 'Lavar o cabelo na dose certa, Não tomar banho quente, Usar shampoo para cabelos oleosos, Evitar dormir de cabelo molhado, Evitar cremes sem enxague.';
+                }
+                modal.classList.toggle("mostrar");
+            });
+        })
+    </script>
+
+<!--Modal Fim-->
+
+    
+</body>
+</html>

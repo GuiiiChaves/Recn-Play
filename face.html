@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACE</title>
+    <link rel="stylesheet" href="face.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Início</a> </li>
+                <li> <a href="sobre.html">Sobre</a> </li>
+                <li> <a href="dev.html">Contatos</a>
+
+                    <div class="sub-menu-contatos">
+                        <ul>
+                            <li> <a href="estetic.html">Turma de Estética</a> </li>
+                            <li> <a href="dev.html">Desenvolvedores</a> </li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="subtitulo">face</h2><a href=""></a>
+        <a href="opcoes.html"><img class="face" src="img/Manequim.png" alt=""></a>
+        <div class="tipos">
+            <p class="rugas item">Rugas
+            </p>
+            <p class="olheiras item">Olheiras
+            </p>
+            <p class="acne item">Acne</p>
+            <p class="oleosidade item">Oleosidade</p>
+            <p class="melasma item">Melasma</p>
+            <p class="flacidez item">Flacidez</p>
+            <p class="dermatite item">Dermatite</p>
+            <p class="foliculite item">Foliculite</p>
+        </div>
+    </main>
+    <div id="modal-promocao" class="modal-container">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <h3 class="titulo-modal"></h3>
+            <p class="texto-modal"></p>
+
+        </div>
+    </div>
+
+    <script>
+        const itens = document.querySelectorAll(".item");
+        const modal = document.querySelector("#modal-promocao");
+        const divfoliculite = modal.firstElementChild;
+        divfoliculite.firstElementChild.addEventListener("click", () => {
+            modal.classList.toggle("mostrar");
+        });
+        
+
+        
+
+        itens.forEach((item) => {
+            item.addEventListener("click", () => {
+                if(item.classList.contains("foliculite")){
+                    document.querySelector('.titulo-modal').innerText = 'Foliculite';
+                    document.querySelector('.texto-modal').innerText = 'Esfoliar periodicamente a pele, Evitar agressões na pele, Hidratar a pele e usar Protetor solar.';
+                } else if(item.classList.contains("acne")){
+                    document.querySelector('.titulo-modal').innerText = 'ACNE';
+                    document.querySelector('.texto-modal').innerText = 'Higienizar a pele regularmente, Não espremer os cravos, Não dormir com maquiagem e Evitar alimentos gordurosos.';
+                } else if(item.classList.contains("dermatite")){
+                    document.querySelector('.titulo-modal').innerText = 'Dermatite';
+                    document.querySelector('.texto-modal').innerText = 'Evitar estresse, Evitar banhos quentes, Usar hidratantes facíais, Usar fator de proteção solar (FPS).';
+                } else if(item.classList.contains("flacidez")){
+                    document.querySelector('.titulo-modal').innerText = 'Flacidez';
+                    document.querySelector('.texto-modal').innerText = 'Usar protetor solar específico, Evitar bebidas e cigarros, Ingerir alimentos ricos em vitamina C e Evitar a exposição solar.';
+                } else if(item.classList.contains("melasma")){
+                    document.querySelector('.titulo-modal').innerText = 'Melasma';
+                    document.querySelector('.texto-modal').innerText = 'Higienizar a pele, Evitar exposição solar, Evitar a luz visível e invisível (luz azul) e Usar protetor solar específico.';
+                } else if(item.classList.contains("oleosidade")){
+                    document.querySelector('.titulo-modal').innerText = 'oleosidade';
+                    document.querySelector('.texto-modal').innerText = 'Higienizar o rosto com produtos específicos, Usar diariamente protetor solar, Hidratar a pele e Cuidar da sua alimentação.';
+                } else if(item.classList.contains("olheiras")){
+                    document.querySelector('.titulo-modal').innerText = 'olheiras';
+                    document.querySelector('.texto-modal').innerText = 'Dormir bem, Evitar coçar os olhos, Compressas de água fria e Alimentação balanceada.';
+                } else if(item.classList.contains("rugas")){
+                    document.querySelector('.titulo-modal').innerText = 'rugas';
+                    document.querySelector('.texto-modal').innerText = 'Higienizar a pele, Massagem facial, Hidratante facial e Protetor solar';
+                }
+                modal.classList.toggle("mostrar");
+            });
+        })
+    </script>
+
+
+</body>
+
+</html>

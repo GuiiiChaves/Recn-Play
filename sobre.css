@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+body {
+    font-family: 'Russo One', sans-serif;
+    background-color: #fff1ce;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+/*NAVBAR*/
+
+nav {
+    background-color: #483D8B	;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-contatos {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-contatos {
+    display: block;
+    position: absolute;
+    background-color: #483D8B;
+    margin-top: 15px;
+    margin-left: -38px;
+    transition: 1s all;
+    
+
+}
+
+nav ul li:hover .sub-menu-contatos ul {
+    display: block;
+    transition: 1s all;
+}
+
+nav ul li:hover .sub-menu-contatos ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition:1s all;
+    
+}
+
+nav ul li:hover .sub-menu-contatos ul li:hover {
+    background-color: #663399	;
+    transition: 1s all;
+}
+/*NAVBAR FIM*/
+
+/*ORGANIZAÇÃO DOS TEXTOS*/
+
+.imagem {
+    border-radius: 40px;
+}
+
+.sobre-texto {
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sobre-textotitle {
+    color: #e05f38;
+    font-family: 'Mali', cursive;
+    margin-left: center;
+    margin-top: -310px;
+    float: center;
+}
+
+.sobre-textoheader {
+    color: #000000;
+    font-family: 'Schoolbell', cursive, sans-serif;
+    position: center;
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.sobre-proposta {
+    color: #000000;
+}
+
+.sobre-propostatitle{
+    color: #e05f38;
+    font-family: 'Mali', cursive;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 285px;
+}
+
+.sobre-propostaheader {
+    color: #000000;
+    font-family: 'Schoolbell', cursive, sans-serif;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 220px;
+    font-size: 17px;
+    float: left;
+}
+.sobre-metodo {
+    color: #000000;
+}
+
+.sobre-metodotitle {
+    color: #e05f38;
+    font-family: 'Mali', cursive;
+    text-align: right;
+    margin-top: -42px;
+    margin-right: 345px;
+    display: flex;
+    float: right;
+}
+
+.sobre-metodoheader {
+    color: #000000;
+    font-family: 'Schoolbell', cursive, sans-serif;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 220px;
+    font-size: 17px;
+    display: flex;
+    float: right;
+}
+
+/*ORGANIZAÇÃO DOS TEXTOS*/

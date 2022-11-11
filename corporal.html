@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporal</title>
+    <link rel="stylesheet" href="corporal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Início</a> </li>
+                <li> <a href="sobre.html">Sobre</a> </li>
+                <li> <a href="dev.html">Contatos</a> 
+
+                    <div class="sub-menu-contatos">
+                        <ul>
+                            <li> <a href="estetic.html">Turma de Estética</a> </li>
+                            <li> <a href="dev.html">Desenvolvedores</a> </li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="subtitulo">Corporal</h2>
+
+        <a href="opcoes.html"><img class="imagem" src="img/Manequim.png" alt=""></a>
+        <div class="tipos">
+
+            <p class="foliculite item">Foliculite</p>
+            <p class="celulite item">Celulite</p>
+            <p class="flacidezMuscular item">Flacidez Muscular</p>
+            <p class="estrias item">Estrias</p>
+            <p class="manchas item">Manchas<br>Axilas/Virilhas</p>
+            <p class="flacidezPele item">Flacidez de Pele</p>
+
+        </div>
+    </main>
+
+    <div id="modal-promocao" class="modal-container">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <h3 class="titulo-modal"></h3>
+            <p class="texto-modal"></p>
+
+        </div>
+    </div>
+
+    <script>
+        const itens = document.querySelectorAll(".item");
+        const modal = document.querySelector("#modal-promocao");
+        const divfoliculite = modal.firstElementChild;
+        divfoliculite.firstElementChild.addEventListener("click", () => {
+            modal.classList.toggle("mostrar");
+        });
+
+
+
+
+        itens.forEach((item) => {
+            item.addEventListener("click", () => {
+                if(item.classList.contains("foliculite")){
+                    document.querySelector('.titulo-modal').innerText = 'Foliculite';
+                    document.querySelector('.texto-modal').innerText = 'Evitar roupas apertadas, Manter a pele limpa e seca, Invista na esfoliação, Evite espremer as espinhas.';
+                } else if(item.classList.contains("celulite")){
+                    document.querySelector('.titulo-modal').innerText = 'Celulite';
+                    document.querySelector('.texto-modal').innerText = 'Hábitos saudáveis, Exercícios físicos, Boa alimentação, Tratamento estéticos.';
+                } else if(item.classList.contains("flacidezMuscular")){
+                    document.querySelector('.titulo-modal').innerText = 'Flacidez Muscular';
+                    document.querySelector('.texto-modal').innerText = 'Estimular a muscilatura com exercícios físicos, Consumir fibras e muita água, Alimentação equilibrada e variada, Procurar um profissionais que tratam a flacidez.';
+                } else if(item.classList.contains("estrias")){
+                    document.querySelector('.titulo-modal').innerText = 'Estrias';
+                    document.querySelector('.texto-modal').innerText = 'Boa alimentação, Hidratar a pele, Não oscilar peso, Beber água, Massagem corporal.';
+                } else if(item.classList.contains("manchas")){
+                    document.querySelector('.titulo-modal').innerText = 'Manchas';
+                    document.querySelector('.texto-modal').innerText = 'Evitar procedimentos agressivos, como a depilação com cera e lâmina, Evitar atrito pós depilação, Esfoliar a pele.';
+                } else if(item.classList.contains("flacidezPele")){
+                    document.querySelector('.titulo-modal').innerText = 'Flacidez de Pele';
+                    document.querySelector('.texto-modal').innerText = 'Manter o peso estável, Não fumar, Evitar consumo de alcoól, Beber água, Consumir alimentos ricos em proteínas e colágeno, Evitar açúcar, Evitar exposição excessiva ao sol.';
+                }
+                modal.classList.toggle("mostrar");
+            });
+        })
+    </script>
+
+</body>
+
+</html>

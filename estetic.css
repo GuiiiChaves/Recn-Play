@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    z-index: -1;
+    background-image: url(img/background2.jpg);
+   
+}
+
+/*NAVBAR*/
+
+nav {
+    background-color: #483D8B	;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 10px;
+    padding: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-contatos {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-contatos {
+    display: block;
+    position: absolute;
+    background-color: #483D8B;
+    margin-top: 15px;
+    margin-left: -38px;
+    transition: 1s all;
+    
+
+}
+
+nav ul li:hover .sub-menu-contatos ul {
+    display: block;
+    transition: 1s all;
+}
+
+nav ul li:hover .sub-menu-contatos ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition:1s all;
+    
+}
+
+nav ul li:hover .sub-menu-contatos ul li:hover {
+    background-color: #663399	;
+    transition: 1s all;
+}
+
+/*NAVBAR FIM*/
+
+/* FORMULÁRIO */
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color:rgba(0, 0,0,.5);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+section h2 {
+    color: #483D8B;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #483D8B;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus {
+    border-radius: 16px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all 1s;
+    margin: 20px;
+}
+
+form button:hover {
+    background:#21203f ;
+    color: white;
+    border-radius: 16px;
+}
+
+/* FORMULÁRIO FIM */
+
+/* Pagina estetic-contact */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #4b3c5d;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: #fff1ce;
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: #fff1ce;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 15px 55px;
+    background-color: #fff1ce;
+    text-decoration: none;
+    color: #21203f;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-radius: 16px;
+}

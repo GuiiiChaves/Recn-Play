@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    z-index: -1;
+    overflow-y:hidden ;
+   
+}
+
+/*NAVBAR*/
+
+nav {
+    background-color: #483D8B	;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 10px;
+    padding: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-contatos {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-contatos {
+    display: block;
+    position: absolute;
+    background-color: #483D8B;
+    margin-top: 15px;
+    margin-left: -38px;
+    transition: 1s all;
+    
+
+}
+
+nav ul li:hover .sub-menu-contatos ul {
+    display: block;
+    transition: 1s all;
+}
+
+nav ul li:hover .sub-menu-contatos ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition:1s all;
+    
+}
+
+nav ul li:hover .sub-menu-contatos ul li:hover {
+    background-color: #663399	;
+    transition: 1s all;
+}
+
+/*NAVBAR FIM*/
+.face{
+    display: flex;
+    float: center;
+    width: 650px;
+    margin-left: 390px ;
+    margin-top: -25px;
+}
+
+.subtitulo{
+    color: #21203f;
+    text-decoration:underline;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.tipos{
+    color: #7a297a;
+    margin: 0 10px;
+}
+
+.rugas{
+    display: flex;
+    float:right;
+    position: relative;
+    z-index: 1;
+    top: -1456px;
+    right: 380px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.oleosidade{
+    display: flex;
+    float:right;
+    position: relative;
+    z-index: 1;
+    top: -1560px;
+    right: 220px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.dermatite{
+    display: flex;
+    float:right;
+    position: relative;
+    z-index: 1;
+    top: -1456px;
+    right: -420px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.olheiras{
+    display: flex;
+    float:left;
+    position: relative;
+    z-index: 1;
+    top: -1550px;
+    right: -60px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.acne{
+    display: flex;
+    float:left;
+    position: relative;
+    z-index: 1;
+    top: -1450px;
+    right: -260px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.flacidez{
+    display: flex;
+    float:left;
+    position: relative;
+    z-index: 1;
+    top: -1450px;
+    right: 180px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.melasma{
+    display: flex;
+    float:right;
+    position: relative;
+    z-index: 1;
+    top: -1560px;
+    right: -250px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.foliculite{
+    display: flex;
+    float:left;
+    position: relative;
+    z-index: 1;
+    top: -1550px;
+    right: 20px;
+    text-decoration: underline;
+    font-size: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.titulo-modal{
+    position: relative;
+    color: #21203f;
+    top: -35px;
+    text-decoration:underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.modal-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color:rgba(0, 0,0,.5);
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-container.mostrar{
+    display: flex;
+
+}
+
+.modal{
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    color: #483D8B;
+    border: 10px solid #988b7a;
+    box-shadow: 0 0 0 10px white;
+    position: relative;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar{
+    display: block;
+}
+
+.mostrar .modal{
+    animation: modal .3s;
+}
+
+
+
+.fechar{
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #988b7a ;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0 ,0 ,.3 );
+
+
+}
+
+

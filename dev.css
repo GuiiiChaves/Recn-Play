@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(img/background2.jpg); /*NÃO CONSIGO PEGAR IMAGEM QUE ESTÁ LOCALIZADA EM ASSETS/IMG*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Russo One', sans-serif;
+}
+
+/*NAVBAR*/
+
+nav {
+    background-color: #483D8B	;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-contatos {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-contatos {
+    display: block;
+    position: absolute;
+    background-color: #483D8B;
+    margin-top: 15px;
+    margin-left: -38px;
+    transition: 1s all;
+    
+
+}
+
+nav ul li:hover .sub-menu-contatos ul {
+    display: block;
+    transition: 1s all;
+}
+
+nav ul li:hover .sub-menu-contatos ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition:1s all;
+    
+}
+
+nav ul li:hover .sub-menu-contatos ul li:hover {
+    background-color: #663399	;
+    transition: 1s all;
+}
+
+.devs{
+  padding: 0 0 20px 0;
+}
+
+/*NAVBAR FIM*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #1f003b;
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-whatsapp:hover{
+  transform: scale(1.2);
+  color: #25D366;
+}
+
+.fa-linkedin:hover{
+  transform: scale(1.2);
+  color: #0072b1;
+}
+
+.fa-github:hover{
+  transform: scale(1.2);
+  color: #171515;
+}
+.fa-envelope:hover{
+  transform: scale(1.2);
+  color: red;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background: linear-gradient(#45ea6c, #8567f7);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+@media screen and (min-aspect-ratio: 16/09) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-aspect-ratio: 16/09) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 1em 1em;
+  }
+}
