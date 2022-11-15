@@ -15,6 +15,13 @@ body {
 }
 
 /*NAVBAR*/
+.logosenac{
+    position: absolute;
+    top: 2%;
+    max-height: 45px;
+    width: 200px;
+    left: 35px;
+  }
 
 nav {
     background-color: #483D8B	;
