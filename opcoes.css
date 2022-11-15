@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: 'Russo One', sans-serif;
+    overflow-y: hidden;
 }
 
 /*NAVBAR*/
