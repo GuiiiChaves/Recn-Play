@@ -13,12 +13,12 @@ display: none;
 }
 
 body {
-  background-clip: url(img/Chain - 25380.mp4); /*NÃO CONSIGO PEGAR IMAGEM QUE ESTÁ LOCALIZADA EM ASSETS/IMG*/
-  background-size: cover;
+  /*background-clip: url(img/Chain - 25380.mp4); /*NÃO CONSIGO PEGAR IMAGEM QUE ESTÁ LOCALIZADA EM ASSETS/IMG*/
+  /*background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Russo One', sans-serif;*/
 }
 
  /*BACKGROUND*/
