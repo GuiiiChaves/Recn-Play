@@ -15,6 +15,10 @@ body {
     background-color: #fff1ce;
 }
 
+::-webkit-scrollbar {
+display: none;
+}
+
 a {
     text-decoration: none;
     text-align: center;
