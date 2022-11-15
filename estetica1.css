@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    z-index: -1;
+    background-color: #fff1ce;
+}
+
+/*NAVBAR*/
+
+.logosenac{
+    position: absolute;
+    top: 3%;
+    max-height: 40px;
+    left: 35px;
+  }
+
+nav {
+    background-color: #483D8B	;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 10px;
+    padding: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-contatos {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-contatos {
+    display: block;
+    position: absolute;
+    background-color: #483D8B;
+    margin-top: 15px;
+    margin-left: -38px;
+    transition: 1s all;
+    
+
+}
+
+nav ul li:hover .sub-menu-contatos ul {
+    display: block;
+    transition: 1s all;
+}
+
+nav ul li:hover .sub-menu-contatos ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition:1s all;
+    
+}
+
+nav ul li:hover .sub-menu-contatos ul li:hover {
+    background-color: #663399	;
+    transition: 1s all;
+}
+
+/*NAVBAR FIM*/
+
+h1{
+    font-size: 40px;
+    margin-top: 30px;
+    position:absolute;
+    right: 480px;
+}
+
+.foto{
+    position: absolute;
+    right: 420px ;
+    top: 200px;
+    height: 400px;
+    width: 500px;
+}
