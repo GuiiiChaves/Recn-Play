@@ -102,12 +102,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 }
 
 .rugas{
-    display: flex;
     float:right;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: -1456px;
-    right: 380px;
+    bottom: 500px;
+    right: 300px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -119,12 +118,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 }
 
 .oleosidade{
-    display: flex;
-    float:right;
-    position: relative;
+    float: right;
+    position: absolute;
+    right: 200px;
+    bottom: 350px;
     z-index: 1;
-    top: -1560px;
-    right: 220px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -136,12 +134,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 }
 
 .dermatite{
-    display: flex;
-    float:right;
-    position: relative;
+    position: absolute;
+    float: right;
+    right: 200px;
+    bottom: 200px;
     z-index: 1;
-    top: -1456px;
-    right: -420px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -153,12 +150,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 }
 
 .olheiras{
-    display: flex;
-    float:left;
-    position: relative;
+    position: absolute;
+    float: right;
+    right: 250px;
+    bottom: 50px;
     z-index: 1;
-    top: -1550px;
-    right: -60px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -170,12 +166,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 }
 
 .acne{
-    display: flex;
-    float:left;
-    position: relative;
+    float: left;
+    position: absolute;
+    bottom: 500px;
+    left: 300px;
     z-index: 1;
-    top: -1450px;
-    right: -260px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -187,12 +182,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 }
 
 .flacidez{
-    display: flex;
-    float:left;
-    position: relative;
+    position: absolute;
+    float: left;
+    left: 150px;
+    bottom: 350px;
     z-index: 1;
-    top: -1450px;
-    right: 180px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -204,12 +198,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 }
 
 .melasma{
-    display: flex;
-    float:right;
-    position: relative;
+    float: left;
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
     z-index: 1;
-    top: -1560px;
-    right: -250px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -222,12 +215,11 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 
 
 .foliculite{
-    display: flex;
-    float:left;
-    position: relative;
+    float: left;
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
     z-index: 1;
-    top: -1550px;
-    right: 20px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
