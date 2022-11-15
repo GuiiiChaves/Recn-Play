@@ -64,7 +64,7 @@ nav ul li:hover .sub-menu-contatos {
 }
 
 nav ul li:hover .sub-menu-contatos ul {
-  display: block;
+  display: inline;
   transition: 1s all;
 }
 
