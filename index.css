@@ -30,6 +30,7 @@ body {
 nav {
   background-color: #483D8B	;
   text-align: center;
+  height: 80px;
 }
 
 nav ul {
