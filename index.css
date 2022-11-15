@@ -8,6 +8,9 @@
   font-weight: bold;
 
 }
+::-webkit-scrollbar {
+display: none;
+}
 
 body {
   background-image: url(img/background2.jpg); /*NÃO CONSIGO PEGAR IMAGEM QUE ESTÁ LOCALIZADA EM ASSETS/IMG*/
