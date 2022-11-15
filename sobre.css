@@ -108,6 +108,7 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 
 .sobre-textoheader {
     color: #000000;
+    font-family: 'Schoolbell', cursive, sans-serif;
     position: center;
     font-size: 20px;
     margin-top: 45px;
