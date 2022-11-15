@@ -6,6 +6,10 @@
     font-weight: bold;
 }
 
+::-webkit-scrollbar {
+display: none;
+}
+
 body {
     font-family: 'Russo One', sans-serif;
     z-index: -1;
