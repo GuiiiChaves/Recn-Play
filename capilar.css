@@ -112,7 +112,7 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
     float: right;
     position: absolute;
     right: 250px;
-    bottom: 250px;
+    bottom: 310px;
     text-decoration: underline;
     font-size: 1px;
     text-transform: uppercase;
@@ -152,7 +152,7 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 .quebra{
     float: left;
     position: absolute;
-    bottom: 250px;
+    bottom: 310px;
     left: 250px;
     text-decoration: underline;
     font-size: 1px;
