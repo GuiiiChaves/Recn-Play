@@ -86,7 +86,7 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 
 .subtitulo{
     color: #21203f;
-    text-decoration:underline;
+    text-decoration:none;
     margin-top: 15px;
     text-transform: uppercase;
     text-align: center;
