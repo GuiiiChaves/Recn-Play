@@ -100,7 +100,6 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 
 .sobre-textotitle {
     color: #e05f38;
-    font-family: 'Mali', cursive;
     margin-left: center;
     margin-top: -310px;
     float: center;
@@ -108,7 +107,6 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 
 .sobre-textoheader {
     color: #000000;
-    font-family: 'Schoolbell', cursive, sans-serif;
     position: center;
     font-size: 20px;
     margin-top: 45px;
