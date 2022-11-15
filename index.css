@@ -188,6 +188,7 @@ button {
   # Footer
   --------------------------------------------------------------*/
   .footer {
+    margin-top: 130px;
     font-size: 14px;
     background-color: #663399;
     color: white;
