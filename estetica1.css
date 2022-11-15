@@ -10,6 +10,7 @@ body {
     font-family: 'Russo One', sans-serif;
     z-index: -1;
     background-color: #fff1ce;
+    overflow-x: hidden;
 }
 
 /*NAVBAR*/
@@ -78,9 +79,10 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 /*NAVBAR FIM*/
 
 h1{
+    text-align: center;
+    font-style: italic ;
     font-size: 40px;
     margin-top: 30px;
-    position:absolute;
     right: 480px;
 }
 
@@ -90,4 +92,74 @@ h1{
     top: 200px;
     height: 400px;
     width: 500px;
+}
+
+h2{
+    position: absolute;
+    font-style: italic;
+    font-size: 30px;
+    margin: 20px ;
+    color: #483D8B;
+}
+
+.capilar{
+    top: 650px;
+    left: 100px;
+}
+
+.nomes-capilar{
+    position: relative;
+    display: list-item;
+    margin-top: 2px;
+    height: 30px;
+    top: 590px;
+    left: 630px;
+}
+
+.facial{
+    top: 650px;
+    right: 570px;
+}
+
+.nomes-facial{
+    position: relative;
+    display: list-item;
+    margin-top: 2px;
+    height: 30px;
+    top: 145px;
+    left: 110px;
+}
+
+.corporal{
+    top: 650px;
+    right: 100px;
+}
+
+.nomes-corporal{
+    position: relative;
+    display: list-item;
+    margin-top: 2px;
+    height: 30px;
+    top: -210px;
+    right: -1070px;
+}
+
+button {
+    position: absolute;
+    padding: 15px 55px;
+    top: 1200px;
+    right: 520px;
+    text-align: center;
+    background-color: #fff1ce;
+    text-decoration: none;
+    color: #21203f;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    border-radius: 16px;
+    background-color: #483D8B;
+    color: white;
+    cursor: pointer;
 }
