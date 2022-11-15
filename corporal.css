@@ -95,6 +95,10 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
     left: 0;
     margin: auto;
 }
+.tipos{
+    color: #7a297a;
+    margin: 0 10px;
+}
 .foliculite{
     float: right;
     position: relative;
