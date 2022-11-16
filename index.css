@@ -50,7 +50,7 @@ nav {
   text-align: center;
   height: 80px;
   animation: flow 30s ease-in-out infinite;
-  background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+  background: linear-gradient(#45ea6c, #8567f7);
   background-size: 300%;
   -webkit-background-clip: text;
   background-clip: padding-box;
