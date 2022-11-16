@@ -56,6 +56,7 @@ nav {
   -webkit-background-clip: text;
   background-clip: padding-box;
   -webkit-text-fill-color: white;
+  backdrop-filter: blur(6px);
  }
 
 nav ul {
