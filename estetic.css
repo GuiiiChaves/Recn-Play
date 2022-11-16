@@ -28,6 +28,12 @@ body {
 nav {
     background-color: #483D8B	;
     text-align: center;
+    animation: flow 30s ease-in-out infinite;
+  background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: padding-box;
+  -webkit-text-fill-color: white;
 }
 
 nav ul {
