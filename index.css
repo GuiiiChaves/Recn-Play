@@ -49,14 +49,12 @@ nav {
   background-color: #483D8B	;
   text-align: center;
   height: 80px;
-  box-shadow: 10px 10px grey;
   animation: flow 30s ease-in-out infinite;
   background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
   background-size: 300%;
   -webkit-background-clip: text;
   background-clip: padding-box;
   -webkit-text-fill-color: white;
-  backdrop-filter: blur(6px);
  }
 
 nav ul {
@@ -92,6 +90,7 @@ nav ul li:hover .sub-menu-contatos {
   -webkit-background-clip: text;
   background-clip: padding-box;
   -webkit-text-fill-color: white;
+   backdrop-filter: blur(30px);
   
 
 }
