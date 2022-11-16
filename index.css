@@ -85,7 +85,7 @@ nav ul li:hover .sub-menu-contatos {
   margin-left: -38px;
   transition: 1s all;
   animation: flow 30s ease-in-out infinite;
-  background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+  background: radial-gradient(circle,#B689A4,#712954,#570F3A,#410B2C);
   background-size: 300%;
   -webkit-background-clip: text;
   background-clip: padding-box;
