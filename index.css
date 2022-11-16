@@ -117,6 +117,14 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 padding: 0 0 20px 0;
 }
 
+
+
+li:hover:before,
+li:hover::after,
+li:hover a::before{
+   width: 100%;
+}
+
 /*NAVBAR FIM*/
 
 
