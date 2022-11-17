@@ -93,6 +93,24 @@ nav ul li:hover .sub-menu-contatos ul li:hover {
 
 /*NAVBAR FIM*/
 
+/*BACKGROUND*/
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+ /*BACKGROUND FIM*/
+
+
+
+
 h1{
     margin: 20px 10px;
     height: 550px;
