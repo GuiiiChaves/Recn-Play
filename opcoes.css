@@ -186,3 +186,168 @@ button li a{
     }
     
 }
+
+
+
+
+
+/*HEXAGONOS*/
+
+.wrap {
+    color: #222;
+    font-size: 24px;
+  }
+  
+  .clip-svg {
+    width: 0;
+    height: 0;
+  }
+  
+  .clip-caption {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: #e95b5b;
+    background-color: #080808;
+  }
+  
+  .clip-each {
+    display: block;
+    position: relative;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    -webkit-clip-path: url("#hexagon-clip");
+    clip-path: url("#hexagon-clip");
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin: 0 auto;
+  }
+  
+  a.clip-each:hover {
+    background: hsl(338, 100%, 2%);
+    -webkit-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+  }
+  
+  .clip-solid {
+    width: 300px;
+    height: 300px;
+    margin-left: 30cm;
+    background-image: url("https://media.istockphoto.com/id/181065083/photo/there-is-elegance-in-the-female-form.jpg?s=612x612&w=0&k=20&c=CrGEzUd2DQ5EeD8inGlMQPS4HD3KXJOAdvDsYrQTfMQ=");
+    background-repeat: no-repeat;
+    background-color: #610341;
+    background-blend-mode: hard-light;
+    -webkit-transition: all 2.5s linear;
+    transition: all 2.5s linear;
+  }
+  
+  
+  .clip-solid:hover:after {
+    height: 0;
+    -webkit-transition: all 0.45s ease-in;
+    transition: all 0.45s ease-in;
+  }
+  
+  .clip-solid:hover .social-share-block {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .social-share-block {
+    position: absolute;
+    bottom: 20px;
+    right: 75px;
+    color: #fff;
+    font-size: 70%;
+    z-index: 2;
+  }
+  
+  .social-each {
+    font-size: 80%;
+  }
+  
+  .clip-gradient {
+    background: #222;
+    width: 160px;
+    height: 160px;
+    background-image: url("https://www.healthista.com/wp-content/uploads/2018/02/womans-face-from-front-Anti-ageing-face-yoga-to-help-lift-the-cheeks-and-jaw-in-60-seconds-by-healthista.com_.jpg");
+    background-position: 5cm;
+    background-color: #610341;
+    background-blend-mode: hard-light;
+  }
+  
+  .clip-gradient .clip-caption {
+    color: #e95b5b;
+    background-color: #080808;
+  }
+  
+  .clip-border {
+    background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
+    background: linear-gradient(150deg, #aebcbf 0%,#6e7774 50%,#333 61%,#333 100%);
+    width: 160px;
+    height: 160px;
+    margin-top: 7px;
+    color: #222;
+    background-image: url("https://zinginstruments.com/wp-content/uploads/woman-with-long-hair.jpg" );
+    background-color: #610341;
+    background-blend-mode: hard-light;
+    
+  }
+  
+  .clip-border::after {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    right: 4%;
+    bottom: 4%;
+    margin: 0 auto;
+    background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    -webkit-clip-path: url("#hexagon-clip");
+    clip-path: url("#hexagon-clip");
+    z-index: -1;
+  }
+  
+  .clip-tagline {
+    display: block;
+    color: #758C9B;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 550px) {
+    .wrap {
+      display: table;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+    }
+    
+  
+    .clip-block {
+      display: table-cell;
+      vertical-align: middle;
+
+      
+    }
+  
+    .clip-border {
+      margin-top: 50px;
+    }
+
+  }
+  
+  
+    
+/*HEXAGONOS FIM*/  
